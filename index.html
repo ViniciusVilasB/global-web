@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Conscientização sobre a Poluição dos Oceanos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header-page">
+            <h1>Healthy Ocean</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#comunidade">Comunidade</a></li>
+                    <li><a href="#dados">Dados</a></li>
+                    <li><a href="#voluntarios">Voluntariar</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="site">
+        <section id="sobre">
+                <h2>Sobre a Plataforma</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quas veritatis modi iste similique, obcaecati iusto et quia nesciunt distinctio corrupti magni eaque. Earum ipsum, deserunt ut aliquid inventore vero?</p>
+        </section>
+    
+        <section id="comunidade">
+            <h2>Comunidade</h2>
+            <p>Ultimas postagens!</p>
+
+            <ul id="listaPostagens"></ul>
+
+            <form id="formulario1">
+                <input type="text" id="inputUsuario" placeholder="Digite aqui sua postagem">
+                <p></p>
+                <button id="btnCriar" >Fazer uma postagem </button>
+            </form>
+
+        </section>
+
+        <section id="dados">
+            <h2>Dados de Poluição</h2>
+            <section class="graphs" id="graphs">
+                <div class="graphs-list">           
+                    <div class="graphs-item">
+                        <img src="./images/grafico1.jpg" alt="Grafico 1">
+                    </div>
+                    
+                    <div class="graphs-item">
+                        <img src="./images/grafico2.jpg" alt="Grafico 2">
+                    </div>
+
+                    <div class="graphs-item">
+                        <img src="./images/grafico3.jpg" alt="Grafico 3">
+                    </div>
+        </section>
+
+        <section id="voluntarios">
+                <h2>Voluntariar</h2>
+                <p>Digite alguns dados para se voluntariar às pesquisas:</p>
+
+                <form id="formulario2">
+                    <p>Nome:</p>
+                    <input type="text" id="inputNome" placeholder="Nome">
+                    <p>Cidade:</p>
+                    <input type="text" id="inputCidade" placeholder="Cidade">
+                    <p>E-mail:</p>
+                    <input type="text" id="inputEmail" placeholder="E-mail">
+                    <p>Confirmar e-mail:</p>
+                    <input type="text" id="inputConfirmarEmail" placeholder="Confirmar e-mail">
+                    <p></p>
+                    <button id="btnEnviar" onclick="Enviar()">Enviar</button>
+                    <p id="resultado"></p>
+                </form>
+        </section>
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
